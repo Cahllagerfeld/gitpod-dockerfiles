@@ -1,4 +1,4 @@
-FROM gitpod/gitpod/workspace-go
+FROM gitpod/workspace-go
 
 RUN sudo apt install -y protobuf-compiler
 RUN go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
