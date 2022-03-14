@@ -1,11 +1,11 @@
-name: Publish Go + Grpc
+name: Publish Node-14
 on:
   workflow_dispatch:
   push:
     branches:
       - 'main'
     paths:
-      - 'golang/grpc/**'
+      - 'node/node-14/**'
 jobs:
   push_to_registry:
     name: Push Docker image to GitHub Packages
@@ -29,7 +29,7 @@ jobs:
         with:
           context: .
           push: true
-          file: 'golang/grpc/golang-grpc.dockerfile'
-          tags: ghcr.io/cahllagerfeld/golang-grpc:latest
+          file: 'node/node-14/node-14.dockerfile'
+          tags: ghcr.io/cahllagerfeld/node-14:latest
 
   
