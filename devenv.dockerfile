@@ -33,6 +33,6 @@ RUN . /home/gitpod/.nix-profile/etc/profile.d/nix.sh \
 RUN . /home/gitpod/.nix-profile/etc/profile.d/nix.sh \
     && nix-env -i direnv \
     && direnv hook bash >> /home/gitpod/.bashrc \
-    && mkdir -p .config/direnv \
-    && echo '[whitelist]' > .config/direnv/config.toml \
-    && echo 'prefix = [ "/workspaces" ]' >> .config/direnv/config.toml
+    && mkdir -p ~/.config/direnv \
+    && echo '[whitelist]' > ~/.config/direnv/config.toml \
+    && echo 'prefix = [ "/workspaces" ]' >> ~/.config/direnv/config.toml
