@@ -30,6 +30,6 @@ jobs:
           context: .
           push: true
           file: 'devenv.dockerfile'
-          tags: ghcr.io/cahllagerfeld/node-14:latest
+          tags: ghcr.io/cahllagerfeld/devenv:latest
 
   
