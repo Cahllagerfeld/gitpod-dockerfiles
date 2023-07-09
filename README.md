@@ -7,4 +7,4 @@ Custom Dockerfiles for usage in Gitpod
 Outdated: 
 
 - Node.js 14
-- Golang
+- Golang & Protobuff
